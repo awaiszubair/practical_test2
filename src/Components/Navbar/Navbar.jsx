@@ -1,13 +1,16 @@
 import React from 'react'
-import logo1 from '../../assets/logo1.png'
+import '../style.css'
 import './style.css'
+import logo1 from '../../assets/logo1.png'
+import logo2 from '../../assets/logo2.png'
+
 function Navbar() {
     return (
         <div className='nav'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-lg-2 logo1'><img src={logo1} alt="" /></div>
-                    <div className='col-lg-7 text-center menus'>
+                    <div className='col-lg-2 col-md-6 col-sm-6 logo1'><img src={logo1} alt="" /></div>
+                    <div className='col-lg-7 col-md-4 col-sm-3 text-center menus'>
                         <ul>
                             <li>Legacy</li>
                             <li>SuperProducer</li>
@@ -17,11 +20,14 @@ function Navbar() {
                             <li>Creatives</li>
                         </ul>
                     </div>
-                    <div className='col-lg-3 register_own'>
+                    <div className='col-lg-3 col-md col-sm register_own'>
                         <ul>
                             <li className='signin_link'>Sing In</li>
                             <li><button className='signup_button'>Sign Up</button></li>
                         </ul>
+                    </div>
+                    <div className='col-lg-3 col-md-6 col-sm-6 register_own_2'>
+                        <img src={logo2} alt="" />
                     </div>
                 </div>
             </div>
@@ -29,4 +35,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
